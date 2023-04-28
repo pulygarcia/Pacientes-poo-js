@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__heading">Administrador pacientes</h1>
+        <span><img src="img/doctor_icon_134842.svg" alt="doctor icon" class="header__icon"></span>
+    </header>
+
+    <main class="container">
+        <section class="app">
+            <div class="app__grid">
+                <div class="app__form">
+                    <form id="formulario">
+                        <legend class="formulario__legend">Datos del paciente</legend>
+                        <div class="formulario__campo">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" placeholder="Nombre del paciente" id="name">
+                        </div>
+                        <div class="formulario__campo">
+                            <label for="surname">Apellido</label>
+                            <input type="text" name="surname" placeholder="Apellido del paciente" id="surname">
+                        </div>
+                        <div class="formulario__campo">
+                            <label for="phone">Teléfono</label>
+                            <input type="text" name="phone" placeholder="Teléfono del paciente" id="phone">
+                        </div>
+                        <div class="formulario__campo">
+                            <label for="date">Fecha</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="formulario__campo">
+                            <label for="time">Hora</label>
+                            <input type="time" name="time" id="time">
+                        </div>
+                        <div class="formulario__campo">
+                            <label for="symptom">Síntomas</label>
+                            <textarea name="symptom" id="symptom" placeholder="Ingrese los sítomas del paciente"></textarea>
+                        </div>
+                        <div class="formulario__campo">
+                            <button type="submit" id="create-visit">Crear cita</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="app__result">
+                    <h2 class="app__result-heading">Pacientes</h2>
+                    <ul id="result"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
